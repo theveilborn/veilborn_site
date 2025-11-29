@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Veilborn Landing Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5a2c6d",
+                        "background-light": "#f7f6f7",
+                        "background-dark": "#1b151d",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col w-full">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 px-4 md:px-10 py-3 fixed top-0 left-0 right-0 z-50 bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center gap-4 text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_543)">
+<path d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M7.24189 26.4066C7.31369 26.4411 7.64204 26.5637 8.52504 26.3738C9.59462 26.1438 11.0343 25.5311 12.7183 24.4963C14.7583 23.2426 17.0256 21.4503 19.238 19.238C21.4503 17.0256 23.2426 14.7583 24.4963 12.7183C25.5311 11.0343 26.1438 9.59463 26.3738 8.52504C26.5637 7.64204 26.4411 7.31369 26.4066 7.24189C26.345 7.21246 26.143 7.14535 25.6664 7.1918C24.9745 7.25925 23.9954 7.5498 22.7699 8.14278C20.3369 9.32007 17.3369 11.4915 14.4142 14.4142C11.4915 17.3369 9.32007 20.3369 8.14278 22.7699C7.5498 23.9954 7.25925 24.9745 7.1918 25.6664C7.14534 26.143 7.21246 26.345 7.24189 26.4066ZM29.9001 10.7285C29.4519 12.0322 28.7617 13.4172 27.9042 14.8126C26.465 17.1544 24.4686 19.6641 22.0664 22.0664C19.6641 24.4686 17.1544 26.465 14.8126 27.9042C13.4172 28.7617 12.0322 29.4519 10.7285 29.9001L21.5754 40.747C21.6001 40.7606 21.8995 40.931 22.8729 40.7217C23.9424 40.4916 25.3821 39.879 27.0661 38.8441C29.1062 37.5904 31.3734 35.7982 33.5858 33.5858C35.7982 31.3734 37.5904 29.1062 38.8441 27.0661C39.879 25.3821 40.4916 23.9425 40.7216 22.8729C40.931 21.8995 40.7606 21.6001 40.747 21.5754L29.9001 10.7285ZM29.2403 4.41187L43.5881 18.7597C44.9757 20.1473 44.9743 22.1235 44.6322 23.7139C44.2714 25.3919 43.4158 27.2666 42.252 29.1604C40.8128 31.5022 38.8165 34.012 36.4142 36.4142C34.012 38.8165 31.5022 40.8128 29.1604 42.252C27.2666 43.4158 25.3919 44.2714 23.7139 44.6322C22.1235 44.9743 20.1473 44.9757 18.7597 43.5881L4.41187 29.2403C3.29027 28.1187 3.08209 26.5973 3.21067 25.2783C3.34099 23.9415 3.8369 22.4852 4.54214 21.0277C5.96129 18.0948 8.43335 14.7382 11.5858 11.5858C14.7382 8.43335 18.0948 5.9613 21.0277 4.54214C22.4852 3.8369 23.9415 3.34099 25.2783 3.21067C26.5973 3.08209 28.1187 3.29028 29.2403 4.41187Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clippath id="clip0_6_543"><rect fill="white" height="48" width="48"></rect></clippath>
+</defs>
+</svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">VEILBORN</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-white/80 hover:text-white transition-colors text-sm font-medium leading-normal" href="#">Story</a>
+<a class="text-white/80 hover:text-white transition-colors text-sm font-medium leading-normal" href="#">Features</a>
+<a class="text-white/80 hover:text-white transition-colors text-sm font-medium leading-normal" href="#">Gallery</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-80 transition-colors">
+<span class="truncate">Begin Your Journey</span>
+</button>
+</div>
+<div class="md:hidden">
+<button class="text-white p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow">
+<div class="@container">
+<div class="flex min-h-screen flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 items-center justify-center p-4 text-center" data-alt="A mysterious cloaked Veilborn character with glowing tattoos overlooking a misty village" style='background-image: linear-gradient(rgba(27, 21, 29, 0.6) 0%, rgba(27, 21, 29, 0.9) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAZLuGt5RarcsnU2nqq9PYoJf3IPE6yL5xUcWkS5UPtRJn5wuhnUOTj7cdJvVrfdQLBYFVhoqPOmMBUtNP9EX9kV24i_XWGH-wExezaz2TkbvRHHVInJyIuWS_SR-bQf68bvX-vpKEiKnId1Ktz9cWpaB-KrCpolZCWx3Wo8J6ivdeJD9n-YBUhwoQE4YCj4b2TuVCvJ5ceWWoSZFFdrRDT7J3eKBlm0xwW5hC58Maa6caBS4Ng8sW9ZdMbaa9weLhSH2spgInooQg");'>
+<div class="flex flex-col gap-4 max-w-3xl">
+<h1 class="text-white text-5xl font-black leading-tight tracking-[-0.033em] md:text-7xl" style="text-shadow: 0 0 15px rgba(90, 44, 109, 0.8);">
+                                        VEILBORN
+                                    </h1>
+<h2 class="text-white/90 text-base font-normal leading-normal md:text-xl">
+                                        Dark Fantasy Interactive Adventure - Your Choices Shape the Story
+                                    </h2>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] shadow-[0_0_15px_rgba(90,44,109,0.9)] hover:bg-opacity-80 transition-all hover:shadow-[0_0_25px_rgba(90,44,109,1)]">
+<span class="truncate">Begin Your Journey</span>
+</button>
+</div>
+</div>
+<div class="px-4 md:px-10 lg:px-20 xl:px-40 py-16 md:py-24">
+<div class="max-w-5xl mx-auto">
+<h2 class="text-white text-3xl font-bold leading-tight tracking-[-0.015em] px-4 pb-6 text-center">Forge Your Destiny</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-6 border border-white/10 bg-white/5 backdrop-blur-sm">
+<p class="text-white/80 text-base font-medium leading-normal">Paths</p>
+<p class="text-white tracking-light text-4xl font-bold leading-tight">4</p>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-6 border border-white/10 bg-white/5 backdrop-blur-sm">
+<p class="text-white/80 text-base font-medium leading-normal">Worlds</p>
+<p class="text-white tracking-light text-4xl font-bold leading-tight">17</p>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-6 border border-white/10 bg-white/5 backdrop-blur-sm">
+<p class="text-white/80 text-base font-medium leading-normal">Endings</p>
+<p class="text-white tracking-light text-4xl font-bold leading-tight">8</p>
+</div>
+</div>
+</div>
+</div>
+<div class="px-4 md:px-10 lg:px-20 xl:px-40 py-16 md:py-24 bg-background-dark/50">
+<div class="max-w-5xl mx-auto">
+<h2 class="text-white text-3xl font-bold leading-tight tracking-[-0.015em] px-4 pb-8 text-center">Master Your Power</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="group flex flex-col items-center text-center gap-4 p-6 rounded-xl border border-transparent hover:border-primary/50 hover:bg-primary/10 transition-all">
+<div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors group-hover:shadow-[0_0_15px_rgba(90,44,109,0.7)]">
+<span class="material-symbols-outlined text-4xl" data-icon="swords">swords</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-white text-lg font-bold">Strength</h3>
+<p class="text-white/70 text-sm">Overcome obstacles with brute force and martial prowess.</p>
+</div>
+</div>
+<div class="group flex flex-col items-center text-center gap-4 p-6 rounded-xl border border-transparent hover:border-primary/50 hover:bg-primary/10 transition-all">
+<div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors group-hover:shadow-[0_0_15px_rgba(90,44,109,0.7)]">
+<span class="material-symbols-outlined text-4xl" data-icon="groups">groups</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-white text-lg font-bold">Leadership</h3>
+<p class="text-white/70 text-sm">Inspire allies and command respect to change the tides of fate.</p>
+</div>
+</div>
+<div class="group flex flex-col items-center text-center gap-4 p-6 rounded-xl border border-transparent hover:border-primary/50 hover:bg-primary/10 transition-all">
+<div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors group-hover:shadow-[0_0_15px_rgba(90,44,109,0.7)]">
+<span class="material-symbols-outlined text-4xl" data-icon="shield">shield</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-white text-lg font-bold">Courage</h3>
+<p class="text-white/70 text-sm">Face the encroaching darkness and make the ultimate sacrifice.</p>
+</div>
+</div>
+<div class="group flex flex-col items-center text-center gap-4 p-6 rounded-xl border border-transparent hover:border-primary/50 hover:bg-primary/10 transition-all">
+<div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors group-hover:shadow-[0_0_15px_rgba(90,44,109,0.7)]">
+<span class="material-symbols-outlined text-4xl" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-white text-lg font-bold">Magic</h3>
+<p class="text-white/70 text-sm">Weave ancient runes and command arcane energies to bend reality.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="px-4 md:px-10 lg:px-20 xl:px-40 py-16 md:py-24">
+<div class="max-w-5xl mx-auto text-center">
+<h2 class="text-white text-3xl font-bold leading-tight tracking-[-0.015em] px-4 pb-8">Glimpses of the Veil</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<img alt="A dark, foreboding castle perched on a cliff under a stormy sky." class="aspect-square w-full h-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgCmJnmozhd8-WsrgrRwiw4EFrw4GAogysJgEdQEvwN2QaFPmSPQWz-v0nC6vkmwmNt3FPnmlQl87B7c2x3iBZd6Sh9YbauKY_bq6UHkrZqXG6Bt78w-OE7VjZocWdNQ_AbheehNecgz_kL_U0UrnYaMMJvB81vTOkuC5z0R6FJBU8rD9Ayr0Vrgou2GAJNU6v4ItNAkb0H_jt5gaGXi3SMC5LvRIkI-AyN8KTupTIoKafsXBbkqhvcjHv45rjog-Mz_cV--q5s0g"/>
+<img alt="An enchanted forest with glowing mushrooms and ancient, gnarled trees." class="aspect-square w-full h-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN4TpulKt-0DsKqLyCvu77NEdUOtcJ8h5KFiFY3H17syZa1aNLc9QnYAhXYPg6dPwCFJKhGRG0_CmrvS45YSYNTD7fFyUp2vagWECFGQfyLzlLLNgw3-SEjPv7rV0G6W6zZmLKVyIHvba4iT27AqqRG8PuhLk6OITxQBA-GayGglfUofJkSEKKU9h1jq11O0KjcPBeXzPrx-yTnUng-SpQct8h2Mu-lK1UJhqkHTxcLyuLSFF81Ys5dL4UbecxvYhpUcdvbQvZ_0k"/>
+<img alt="A lone warrior standing in a vast, desolate wasteland under a blood-red moon." class="aspect-square w-full h-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB66zA1TNV8OxsE6rlyHI_HFw4zs1e4v_eM6C-c_2jg1cqanH1LAa0Q9JyiV9ZEg0O4blTpNjviQNb3KnhxNvsssVi97kkbtiIT-2lK8MMbdp1vyD7lmaAfnockYi0e8jeXCVgR-hb7H_f-1X_EmnUU7Adshn8m4rxRnao4uZ-0WqjhmGyUtwYfwNd6i2whUIQFIUUaho5kmWrlhuv1elY3QNe3s0vKuhazIvH6b9NmUr05pRJAe7wk8gtXGP94r2FyBICYl0onW8U"/>
+<img alt="An ethereal cityscape with floating islands and magical architecture." class="aspect-square w-full h-full object-cover rounded-lg sm:col-span-2 lg:col-span-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYcfz_Qj91IUCwZUe319Pg2tL_D69p9iHAEMfCb8MGlzTN5biL8rwYZMHhTT8w6zo5U9BbBDXmz0GcIZM4CecID7kheaYZ7LM7JEB-knIFllXj2HbjG6ZxHS--_IgT0AgcPlnN1a7_vFf0pRCr9acpNkaEmGRar5rC1mGJT8FUvXwp2pVl1f88Eoh-fUXC21kk4qwaYozpSM_kPAZteeK2pPO9chfpQ2hINitdo-rmrR8BlFGBQVp8i970IlmhKeHIWMbwQiVSuwQ"/>
+<img alt="A mysterious figure in a dark cloak holding a glowing orb of power." class="aspect-square w-full h-full object-cover rounded-lg sm:col-span-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClzVcKzYmZ7WQ5F8Ah0_-Rt4xsEGQgvGzt5dULfBjw1LD4XYNrgCaxUFiX-XFqwaScQ9CVoVixBdjAjKj7CAlTemr1RofgwZWcjM3pjvooZPYuwNCZSzGgSHPILi1aNqw8Rl4W_hAhP9tjRRsJwgHFB2kwvAckyUnyQND68qyf8MGvvCwXjRc6DKFDObwjSuA9vbaFsyEPdoNTcoeKNgpmxayut2wVXCK-I9kfyhpzKkPrSjfMoNc5-tI6-tFfpTKu_uXwCxJ94Mk"/>
+</div>
+</div>
+</div>
+<div class="bg-cover bg-center bg-fixed" style='background-image: linear-gradient(rgba(27, 21, 29, 0.85) 0%, rgba(27, 21, 29, 0.85) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAGAFg2xPOjKXoBjKzczAM91zjaAvihhZUsgnhfaTnjhjqEkaUO726xbyx52R30haXfU9byYpNHQz04z1uvT6Fv5jj1Nrsu87-PQOC_jmQNJVDtLYM9UjAOAHiXbKiU2nfsWl5pptvIGRdd-kuJtGiTYfrhghtvn92n_R5RoABCHl9BUg4sY099DUQYzgJeGXMXwQuc5PMTw9nIB4zUeaPUGEzGRzbbS9r197KcJpmZXh1D3icBiqTGSN2vO6JVK_4tGd4szDaXSZw");'>
+<div class="px-4 md:px-10 lg:px-20 xl:px-40 py-24 md:py-32">
+<div class="max-w-3xl mx-auto text-center flex flex-col items-center gap-6">
+<p class="text-white/70 text-lg italic tracking-wider leading-relaxed">"The Veil thins, and shadows stir. What was once legend now bleeds into reality. A choice must be made—a destiny forged in the heart of the encroaching darkness. Will you be the world's salvation, or its final, agonizing breath?"</p>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-red-800 text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-red-700 transition-colors shadow-lg shadow-red-800/20">
+<span class="truncate">Play Now</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-background-dark/50 border-t border-white/10">
+<div class="px-4 md:px-10 lg:px-20 xl:px-40 py-12">
+<div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3 text-white">
+<div class="size-5 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_543_footer)">
+<path d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M7.24189 26.4066C7.31369 26.4411 7.64204 26.5637 8.52504 26.3738C9.59462 26.1438 11.0343 25.5311 12.7183 24.4963C14.7583 23.2426 17.0256 21.4503 19.238 19.238C21.4503 17.0256 23.2426 14.7583 24.4963 12.7183C25.5311 11.0343 26.1438 9.59463 26.3738 8.52504C26.5637 7.64204 26.4411 7.31369 26.4066 7.24189C26.345 7.21246 26.143 7.14535 25.6664 7.1918C24.9745 7.25925 23.9954 7.5498 22.7699 8.14278C20.3369 9.32007 17.3369 11.4915 14.4142 14.4142C11.4915 17.3369 9.32007 20.3369 8.14278 22.7699C7.5498 23.9954 7.25925 24.9745 7.1918 25.6664C7.14534 26.143 7.21246 26.345 7.24189 26.4066ZM29.9001 10.7285C29.4519 12.0322 28.7617 13.4172 27.9042 14.8126C26.465 17.1544 24.4686 19.6641 22.0664 22.0664C19.6641 24.4686 17.1544 26.465 14.8126 27.9042C13.4172 28.7617 12.0322 29.4519 10.7285 29.9001L21.5754 40.747C21.6001 40.7606 21.8995 40.931 22.8729 40.7217C23.9424 40.4916 25.3821 39.879 27.0661 38.8441C29.1062 37.5904 31.3734 35.7982 33.5858 33.5858C35.7982 31.3734 37.5904 29.1062 38.8441 27.0661C39.879 25.3821 40.4916 23.9425 40.7216 22.8729C40.931 21.8995 40.7606 21.6001 40.747 21.5754L29.9001 10.7285ZM29.2403 4.41187L43.5881 18.7597C44.9757 20.1473 44.9743 22.1235 44.6322 23.7139C44.2714 25.3919 43.4158 27.2666 42.252 29.1604C40.8128 31.5022 38.8165 34.012 36.4142 36.4142C34.012 38.8165 31.5022 40.8128 29.1604 42.252C27.2666 43.4158 25.3919 44.2714 23.7139 44.6322C22.1235 44.9743 20.1473 44.9757 18.7597 43.5881L4.41187 29.2403C3.29027 28.1187 3.08209 26.5973 3.21067 25.2783C3.34099 23.9415 3.8369 22.4852 4.54214 21.0277C5.96129 18.0948 8.43335 14.7382 11.5858 11.5858C14.7382 8.43335 18.0948 5.9613 21.0277 4.54214C22.4852 3.8369 23.9415 3.34099 25.2783 3.21067C26.5973 3.08209 28.1187 3.29028 29.2403 4.41187Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clippath id="clip0_6_543_footer"><rect fill="white" height="48" width="48"></rect></clippath>
+</defs>
+</svg>
+</div>
+<h2 class="text-white text-base font-bold leading-tight tracking-[-0.015em]">VEILBORN</h2>
+</div>
+<p class="text-white/60 text-sm text-center md:text-left">© 2024 Veilborn Studios. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>
